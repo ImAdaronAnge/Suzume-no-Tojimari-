@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icons.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Martian+Mono:wght@300&family=Sriracha&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Caveat+Brush&family=Martian+Mono:wght@300&family=Sriracha&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Monofett&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Suzume no Tojimari(すずめの戸締まり)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Sriracha', Martino Mono;
+      }
+      body h2 {
+        font-family: 'Itim', Monofett;
+        word-spacing: 4px;
+        letter-spacing: 4px;
+      }
+
+      header .logo {
+        font-size: 30px;
+        word-spacing: 1px;
+        letter-spacing: 3px;
+      }
+
+      @media screen and (max-width: 600px) {
+        header .logo {
+          font-size: 24px;
+          word-spacing: 0;
+          letter-spacing: 0;
+        }
+      }
+
+      nav .logo.black-text{
+        padding: 30px;
+        font-family: 'Borel', Caveat Brush;
+      }
+
+      nav .right.hide-on-med-and-down {
+        padding-right: 30px;
+      }
+
+      @media screen and (max-width: 600px) {
+        nav .logo.black-text {
+          padding: 15px;
+          font-size: 24px;
+        }
+      }
+
+      .container {
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+        margin-bottom: 50px;
+       
+      }
+
+      .container .syp {
+        width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 40px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .container .syp {
+          width: 100%;
+          margin-left: 0;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .container p {
+          font-size: 20px;
+          text-align: justify;
+          font-family: 'Itim', cursive;
+          width: 300px;
+          text-align: center;
+        } 
+        .container .syp-title {
+          text-align: center;
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+      }
+
+      .container .syp-content{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      
+       .container .responsive-img {
+        align-content: center;
+        padding-bottom: 5px;
+        margin-left: 70px;
+
+      }
+      
+      .container .syp-title {
+        font-size: 40px;
+        word-spacing: 10px;
+        letter-spacing: 10px;
+        padding-top: 5px;
+        text-align: center;
+      }
+
+      .container p {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Itim', cursive;
+      } 
+
+      .container-card {
+        display: flex;
+        text-align: center; 
+        justify-content: center;
+        top: 5%;
+        left: 30%;
+      }
+
+      .card.sticky {
+        width: 100%; 
+      }
+
+      .card-image img {
+        max-width: 100%; 
+        height: 50%; 
+      }
+
+      .section .container {
+        background: #ddd;
+      }
+      
+      .video {
+        position: relative; 
+        padding-bottom: 56.25%; 
+        height: 0; 
+        overflow: hidden; 
+        max-width: 100%;
+      }
+
+      .video iframe, .videos object, .video embed {
+        top:0; 
+        left:10%; 
+        width:80%; 
+        height:90%; 
+        position:absolute;
+      }
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-wrapper white" id="home">
+      <div class="wrapper">
+        <a href="#" class="logo black-text">Suzume</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile"><i class="material-icons black-text">menu</i></a>
+
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home" class="black-text"><i class="material-icons left">home</i>HOME</a></li> 
+          <li><a href="#synopsis" class="black-text"><i class="material-icons left">timeline</i>SYNOPSIS</a></li>
+          <li><a href="#clips" class="black-text"><i class="material-icons left">movie</i>CLIPS</a></li>  
+          <li><a href="#character" class="black-text"><i class="material-icons left">person_3</i>CHARACTERS</a></li>  
+          <li><a href="#contact" class="black-text waves-effect waves- btn" style="background-color: lightblue;"><i class="material-icons left">email</i>Email Us!</a></li>
+        </ul>
+
+        <ul class="sidenav blue lighten-5 center" id="mobile">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="img/download (37).jpg" style="height: 200px;">
+            </div>
+            <a href="#user"><img class="circle" src="img/275749.jpg"></a>
+            <a href="#name"><span class="white-text name">Lyn_Rious</span></a>
+            <a href="#email"><span class="white-text email">lynrious@gmail.com</span></a>
+          </div></li>
+
+          <li><a href="#home" class="waves-effect waves-light black-text"><i class="material-icons left">home</i>HOME</a></li>
+          <li><a href="#synopsis" class="waves-effect waves-light black-text"><i class="material-icons left">timeline</i>SYNOPSIS</a></li>   
+          <li><a href="#clips" class="waves-effect waves-light black-text"><i class="material-icons left">movie</i>CLIPS</a></li>
+          <li><a href="#character" class="waves-effect waves-light black-text"><i class="material-icons left">person_3</i>CHARACTERS</a></li>
+          <li><a href="#contact" class="waves-effect waves-black black-text"><i class="material-icons left">email</i>Email Us!</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/banner.jpg"></div>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" id="synopsis">
+    <div class="row">
+      <div class="col s8 m10 l5">
+        <img src="img/moviebanner.jpg " alt="" class="responsive-img materialboxed" >
+      </div>
+      <div class="col s5 m3 l4">
+        <div class="syp white">
+          <div class="syp-content black-text">
+            <span class="syp-title ">SYNOPSIS</span>
+            <p>As the skies turn red and the planet trembles, Japan stands on the brink of disaster. However, a determined teenager named Suzume sets out on a mission to save her country. Able to see supernatural forces that others cannot, it's up to her to close the mysterious doors that are spreading chaos across the land. A perilous journey awaits as the fate of Japan rests on her shoulders.</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  <section>
+    <ul class="collapsible popout">
+      <li><a href="https://movies.alphacoders.com/movies/view/130975/Suzume">Movie Info</a></li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">loyalty</i>Tagline</div>
+        <div class="collapsible-body center"><span>"On the other side of the door, was time in its entirety."</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">mood</i>Genre</div>
+        <div class="collapsible-body center">
+          <span class="btn blue lighten-3 black-text">Animation</span>
+          <span class="btn blue lighten-3 black-text">Drama</span>
+          <span class="btn blue lighten-3 black-text">Mystery</span>
+          <span class="btn blue lighten-3 black-text">Science Fiction</span>
+          <span class="btn blue lighten-3 black-text">Adventure</span>
+          <span class="btn blue lighten-3 black-text">Fantacy</span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">precision_manufacturing</i>Production Companies</div>
+        <div class="collapsible-body center">
+          <span class="btn blue lighten-3 black-text">CoMix Wave Films</span>
+          <span class="btn blue lighten-3 black-text">Story</span>
+          <span class="btn blue lighten-3 black-text">Toho</span>
+          <span class="btn blue lighten-3 black-text">Kadokawa</span>
+          <span class="btn blue lighten-3 black-text">Aniplex</span>
+          <span class="btn blue lighten-3 black-text">East Japan Marketing & Communications</span>
+          <span class="btn blue lighten-3 black-text">Lawson Entertainment</span>
+          <span class="btn blue lighten-3 black-text">vogue ting</span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Others</div>
+        <div class="collapsible-body center">
+          <span style="padding-right: 150px;">Franchise: -</span> 
+          <span style="padding-right: 150px;">Released: 2022-11-11</span>
+          <span style="padding-right: 150px">Runtime: 121 minutes</span>
+          <span style="padding-right: 150px">Status: Released</span>
+          <span style="padding-right: 150px">Rating: 8</span> 
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <div class="center" style="background-color: lightblue;">
+    <h2>Characters</h2>
+  </div>
+  
+  <div class="container center">
+    <div class="container-card" id="character">
+      <div class="row">
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img class="activator" src="img/Munakata.Souta.jpg"  >
+              <span class="card-title">Munakata Souta</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">宗像 草太<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://makotoshinkai.fandom.com/wiki/Souta_Munakata">View More Info</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">Munakata Souta<i class="material-icons right">cancel</i></span>
+              <p>A young man who travels across Japan searching for open doors that bring disaster upon its surroundings. He encounters Suzume while headed for a certain ruin containing a door. <br><br>Later Suzume encounters Souta while he is attempting to close a door. With the two's combined efforts they close it. Afterwards Suzume insists on bandaging Souta up at her house. Souta explains that he is a Closer, who's job is to lock doors to the great beyond. This is because a thing called the worm is constantly trying to escape and destroy the earth. He explains that the reason why the worm got loose must have been because the keystone left his post. </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/iwatosuzume.jpg" class="activator">
+              <span class="card-title">Iwato Suzume</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">岩戸 鈴芽<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://makotoshinkai.fandom.com/wiki/Suzume_Iwato">View More Info</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">Iwato Suzume<i class="material-icons right">cancel</i> </span>
+              <p>Suzume Iwato is a 17-year-old high school girl, who lives with her aunt in a quiet town in the Kyushu region of Japan. While heading to school, she encounters a young man searching for an abandoned area with a door, so she informs him of an abandoned onsen (spa) resort nearby, and curiously follows him. <br> <br> Beckoned by the mysterious doors, Suzume's "journey of closing doors" begins.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/daijin.jpg" class="activator">
+              <span class="card-title">Daijin</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">ダイジン<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://makotoshinkai.fandom.com/wiki/Daijin">
+                View More Info</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">Daijin<i class="material-icons right">cancel</i></span>
+              <p>Daijin is a cat that can speak human language. It is also nicknamed so by locals for its appearance similar to an ancient minister. Daijin is one of the two Keystones in the movie. It has unknowingly been released from its seal by Suzume on its post at the door located at Kyushu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container center" style="padding-top: 1px;">
+    <div class="container-card">
+      <div class="row">
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img class="activator" src="img/tamaki.png"  >
+              <span class="card-title">Iwato Tamaki</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">岩戸環<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://makotoshinkai.fandom.com/wiki/Tamaki_Iwato">View More Info</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">Iwato Tamaki<i class="material-icons right">cancel</i></span>
+              <p>Tamaki Iwato was born in July 1983, six years after her sister Tsubame Iwato. After Tsubame died in the Great East Japan Earthquake in 2011, Tamaki took in her orphaned niece Suzume and raised her as her daughter in Tonami. She worked in a fishery cooperative along with Minoru Okabe at Tonami Fishing Port.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/tomoyaserizawa.png" class="activator">
+              <span class="card-title">Serizawa Tomoya</span>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">芹澤朋也<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://makotoshinkai.fandom.com/wiki/Tomoya_Serizawa">View More Info</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">Serizawa Tomoya<i class="material-icons right">cancel</i> </span>
+              <p>Tomoya came to Souta's apartment looking for him, but he instead met a strange girl named Suzume Iwato, who claimed to be Souta's cousin. They had a brief conversation where Tomoya claimed that Souta owed him 20,000 Yen, however Suzume suddenly ran away before they could talk more. <br><br>The next day, he saw her by Ochanomizu Station and offered her a ride to find Souta. They were joined by Suzume's aunt Tamaki Iwato, who initially mistook him for a playboy seducing Suzume, and two cats Daijin and Sadaijin. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center" style="background-color: lightblue;">
+    <h2>Voice Actors</h2>
+  </div>
+
+  <div class="container center" style="padding-top: 1px;">
+    <div class="container-card">
+      <div class="row">
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/hokuto-souta.jpg"  >
+            </div>
+            <div class="card-content">
+              <span class="card-title">Matsumura Hokuto (Munakata Souta)</span>
+              <p><a href="https://myanimelist.net/people/61286/Hokuto_Matsumura">MORE INFO</a></p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/nanoka-suzume.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Hara Nanoka <br>(Iwato Suzume)</span>
+              <p><a href="https://myanimelist.net/people/59792/Nanoka_Hara">MORE INFO</a></p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/ann-daijin.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Yamane Ann (Daijin) <br><br></span>
+              <p><a href="https://myanimelist.net/people/65470/Ann_Yamane">MORE INFO</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container center" style="padding-top: 1px;">
+    <div class="container-card">
+      <div class="row">
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/fukatsu-tomaki.jpg"  >
+            </div>
+            <div class="card-content">
+              <span class="card-title">Fukatsu Eri <br>(Iwato Tamaki)</span>
+              <p><a href="https://myanimelist.net/people/61289/Eri_Fukatsu">MORE INFO</a></p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col l4 m6 s12">
+          <div class="card sticky action">
+            <div class="card-image" >
+              <img src="img/ryunosuke-serizawa.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Ryunosuke Kamiki (Serizawa Tomoya)</span>
+              <p><a href="https://myanimelist.net/people/947/Ryunosuke_Kamiki">MORE INFO</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="video" id="clips">
+    <div class="video-container">
+      <iframe width="480" height="270" src="https://www.youtube.com/embed/ezcx2YmPNNs" title="Suzume Teaser Trailer (2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share quality: 1080p auto;" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer class="page-footer blue lighten-4 black-text">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l7 black-text" style="padding-right: 50px;">
+          <h5>About</h5>
+          <p>Suzume no Tojimari (Japanese Name/Suzume's Locking Up) is a 2022 Japanese animated coming-of-age fantasy adventure film written and directed by Makoto Shinkai, produced by CoMix Wave Films, and distributed by Toho. <br><br>The film was released in Japan on November 11, 2022, and has received positive reviews from critics and audiences. It has also become one of the highest-grossing Japanese films of all time.</p>
+        </div>
+        <div class="col s12 l3 offset-l2 black-text">
+          <h5>Follow Us</h5>
+          <ul>
+            <li>
+              <a href="#" class="btn-floating btn-large black pulse"><i class='bx bxl-instagram' ></i></a>
+              <a href="#" class="btn-floating btn-large black pulse"><i class='bx bxl-facebook' ></i></a>
+              <a href="#" class="btn-floating btn-large black pulse"><i class='bx bxl-twitter' ></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="center">
+        <li>
+          <a href="#" style="padding-right: 20px;">Contact us</a>
+          <a href="#" style="padding-left: 20px;">Privacy Policy</a>
+          <a href="#" style="padding-left: 20px;">Terms & Conditions</a>
+        </li>
+      </ul>
+    </div>
+    <p class="copyright black-text center">&copy; 2023 Suzume no Tojimari | All Rights Reserved</p>
+  </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.collapsible').collapsible();
+      })
+    </script>
+
+</body>
+</html>
